@@ -1,0 +1,227 @@
+main {
+  background-color: #090909;
+  background-image: linear-gradient(
+    0deg,
+    #090909 0%,
+    #3e0e3e 46%,
+    #036c59 100%
+  );
+}
+
+nav {
+  border-bottom: solid 1px red;
+  width: 100%;
+  height: 15vh;
+  min-height: 39px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  margin-top: -38.2px;
+  background-image: linear-gradient(
+    60deg,
+    #3d3393 0%,
+    #2b76b9 37%,
+    #2cacd1 65%,
+    #35eb93 100%
+  );
+}
+
+nav a {
+  text-decoration: none;
+  color: #9321c4;
+  padding: 15px;
+  margin-right: 30px;
+  font-size: 1.5em;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: red;
+  transition: 0.7s;
+}
+
+body {
+  margin-top: 39px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: monospace;
+  color: white;
+  font-size: 2em;
+  text-shadow: 0px -2px 9px rgba(255, 146, 150, 1);
+}
+
+h1 {
+  align-self: center;
+  padding-top: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  align-self: center;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+#projects {
+  height: 100vh;
+  min-height: 700px;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-bottom: 30px;
+}
+
+.project-tile {
+  border: solid grey;
+  border-radius: 5px;
+  grid-column: 1/3;
+  grid-row: 2/4;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 9px -7px 19px -10px rgba(237, 17, 17, 0.79);
+}
+
+.project-tile:hover {
+  border: solid red 1px;
+  transform: scale(1.05);
+  transition: 0.7s;
+  box-shadow: 9px -7px 19px -10px rgba(237, 17, 17, 0.79);
+}
+
+.project-tile1 {
+  border: solid grey;
+  border-radius: 5px;
+  grid-column: 3/6;
+  grid-row: 2/4;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 9px -7px 19px -10px rgba(237, 17, 17, 0.79);
+}
+
+.project-tile1:hover {
+  border: solid red 1px;
+  transform: scale(1.05);
+  transition: 0.7s;
+  box-shadow: 9px -7px 19px -10px rgba(237, 17, 17, 0.79);
+}
+
+.project-link {
+  grid-column: 2/4;
+  grid-row: 4/4;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  align-self: end;
+  font-family: monospace;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0px -2px 9px rgba(255, 146, 150, 1);
+  border: double grey;
+  border-radius: 20px;
+}
+
+.project-link:hover {
+  background-color: #ff5e08;
+  border: double red;
+  transform: scale(1.2);
+  transition: 0.5;
+}
+
+.tit-proyecto {
+  grid-row: 1/2;
+  grid-column: 2/4;
+  text-align: center;
+  align-self: center;
+  font-family: monospace;
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px -4px 7px rgba(255, 146, 150, 1);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+a p {
+  font-family: monospace;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0px -2px 9px rgba(255, 146, 150, 1);
+  border: double grey;
+  border-radius: 20px;
+}
+
+a p:hover {
+  background-color: #ff5e08;
+  border: double red;
+}
+
+.logo-wp {
+  width: 5%;
+  height: auto;
+  padding-right: 50px;
+}
+
+.logo-wp2 {
+  width: 7.7%;
+  height: auto;
+}
+
+.logo-wp3 {
+  width: 4.6%;
+  padding-left: 50px;
+}
+
+#logo-tel {
+  text-align: center;
+  padding: 20px 0px 50px 0px;
+}
+
+h3 {
+  color: white;
+  font-size: 2em;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 0px -2px 9px rgba(255, 146, 150, 1);
+}
+
+@media (max-width: 650px) {
+  nav {
+    justify-content: space-around;
+  }
+
+  nav a {
+    padding: 5px;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  .logo-wp {
+    width: 10%;
+    height: auto;
+    padding-right: 50px;
+  }
+  .logo-wp2 {
+    width: 14.4%;
+    height: auto;
+  }
+  .logo-wp3 {
+    width: 9.2%;
+    padding-left: 50px;
+  }
+}
